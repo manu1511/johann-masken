@@ -1,0 +1,110 @@
+# In 10 Schritten zur Johann Maske
+
+Um eine Holzmaske ordentlich und fachgerecht zu fertigen sind mehrere Schritte
+notwendig. Diese **Anleitung** ist im Zuge meiner Arbeit für die Tergolape Teufeln
+entstanden.
+
+## Zuschnitt
+
+![](zuschnitt-rohling.jpg)
+
+Der Zuschnitt ist das Fundament der Maske und wird mit einer Kettensäge
+erledigt. Dabei taste ich mich Schrittweise an die Endform heran. Einerseits ist
+es von Vorteil, möglichst viel zu schneiden, damit man später weniger schnitzen
+muss; Andererseits besteht die Gefahr etwas wegzuschneiden was man braucht.
+Somit ist eine **sorgsame Vorgehensweise** Voraussetzung.
+
+## Grobes Vorschnitzen
+
+![Grobes Vorschnitzen der Grundzüge](grobes-vorschnitzen-gruendzuege-05.jpg "Erste Charakterzüge entstehen: Mund-, Wangen- und Augenpartie schaffen mit Nase und Ohren ein erstes Bild der Maske")
+
+Beim Vorschnitzen werden die Grundzüge bestimmt. Angefangen bei Nase-, Mund- und
+Augenpartie geht es weiter zur Schädelform und den Ohren. Man muss hier schon
+darauf achten, dass die einzelnen Komponenten **miteinander harmonieren**! Es ist
+auch von Vorteil, wenn die Schnitzeisen wirklich scharf sind. Zum Schleifen
+verwende ich eine Maschine mit Schleifband. Abgezogen werden die Eisen unter
+Benutzung einer Polierpaste auf einer Filz- oder Stoffscheibe.
+
+## Schnitzen der Feinheiten
+
+![Fertige Larve (mit Kopffell angedacht)](schnitzen-fertige-larve.jpg "Nach und nach entstehen weitere Details wie Falten und Gesichtsausdrücke")
+
+Beginnend bei den Augen gilt es dabei auf Augenhöhe, Augenabstand und ihre
+gemeinsame Wirkung zu achten. Die Größe der Augenöffnung ist vom Glasauge
+abhängig. Zudem schnitze ich gleich einige Augenfältchen, so schaffe ich den
+optischen Übergang zur Maske. Damit ich in späterer Folge kein Mangel an Platz
+habe, deute ich auch gleich die Sehschlitze an. Bei jedem Detail was man gerade
+in Arbeit hat, muss man immer den **nächsten Schritt im Visier** behalten. Um die
+Nase in die richtige Form zu bringen, ist es wichtig, die passenden
+Schnittwinkel zum Einsatz zu bringen. Beim Mund gilt es den für’s Auge korrekten
+Zug zu schnitzen. Um einen besseren Gesamteindruck zu bekommen, schnitze ich
+dann die Ohren und den Übergang hin zur **Schädel- und Wangenpartie**. Jetzt bekommt
+der Schädel noch einige Falten und wo es notwendig ist wird noch etwas
+nachgearbeitet.
+
+## Aushöhlen der Maske
+
+![Maske (ausgehöhlt) mit Stemmeisen](unebenheiten-entfernen-08.jpg "Letzte Unebenheiten werden entfernt: Mit Längs- und Querschnitten wird die Maske ausgehöhlt und Platz für den Kopf geschaffen")
+
+Hierfür verwende ich eine Kettensäge mit einer feinen, weniger aggressiven Kette
+um die Rückschlaggefahr zu minimieren. Nachdem ich die Umrandung geschnitten
+habe, bei der auf die Schnitttiefe beim Einstechen geachtet werden muss, werden
+nun Längs- und Querschnitte gemacht. Die Holzteile sind leicht mit einem
+Stemmeisen herauszubrechen. Den Rest schneide ich wiederum mit der Kettensäge
+und abschließend putze ich noch mit meinen Schnitzeisen nach. Das Abfallmaterial
+der Längsschnitte eignet sich sehr gut als Deko oder Füllung für
+**Zirbenkissen**. Die Glasaugen werden mit einem Schnitzeisen in die
+entsprechende Tiefe versenkt und die Sehschlitze geöffnet.
+
+## Oberflächenbehandlung
+
+![Feinschliff der Maske von Hand](handarbeit-schleifen-02.jpg "Handarbeit: Die Feinheiten werden vorsichtig von Hand geschliffen")
+
+Zur Verfeinerung der Oberflächen dient ein Dreiecksschleifer, mit dem die
+Hauptflächen bearbeitet werden. Der Ausdruck der Maske soll hierbei nicht zu
+Tode geschliffen werden. Kleinere Details wie Zähne, Augen oder Nase werden
+**von Hand geschliffen**, damit die Schnitzerei grundsätzlich erhalten bleibt.
+Um etwas mehr Struktur zu bekommen wird die Maske noch gebürstet.
+
+## Montage der Hörner
+
+![Hörner (Steinbock) montieren und Schwerpunkt ausrichten](schwerpunkt-05.jpg "Die Steinbockhörner werden mittig montiert, der Schwerpunkt ist zentral ausgerichtet und die Maske angenehmer zu tragen")
+
+Bei größeren Hörnern klebe ich ein Stück Holz in den Innenraum. Je nachdem in
+welche Richtung die Hörner zu montieren sind, werden diese mit einer Stichsäge
+**an die Schädelform angepasst**. Von innen werden die Hörner festgeschraubt und
+zusätzlich geklebt. Kleine, dünne Hörner kann man von außen unter Vorbohren
+festschrauben. Zudem wird der Hornsansatz mit Montagekleber oder anderen
+Hilfsmitteln eingefassen. So sind Schrauben nicht mehr ersichtlich. Außerdem hat
+diese Einfassung auch einen optischen Reiz.
+
+## Fassen (malen)
+
+Vorweg muss die Maske grundiert werden um in weiterer Folge mit Acrylfarben
+gefassen werden zu können. Es gibt **verschiedene Techniken**: Vom Bemalen mit einem
+Pinseln, Patinieren bis hin zur Wischtechnik. Das ganze wird abschließend
+versiegelt.
+
+## Augen und Halterung montieren
+
+Die Augen werden innen eingesetzt und verklebt. Der Einsatz von LEDs ist auch
+möglich. Die Befestigung (Kunststoffbügel, Snowboardbindung, Gummiband, usw.)
+wird festgeschraubt.
+
+## Haarmontage
+
+![Bartige Krampusmaske (gepolstert) mit Kopffell](maske-polstern-03.jpg "Die Haare verleihen der Maske ihren edlen Ausdruck")
+
+Zur **Befestigung von Kopffellen** verwende ich Schrauben, die ich so einsetze, dass
+man diese nicht sieht. Ansonsten übermale ich die Schraubenköpfe. Worauf ich
+großen Wert lege, ist das Festkleben des Leders beim Übergang zur Maske. Dieser
+wird auch noch nachgemalen, um an Qualität zu gewinnen.
+
+Bei Bärten und Augenbrauen muss ich jede Haarsträhne separat befestigen, was **mit
+großem Aufwand verbunden** ist. Diese muss ich dann auch noch einfassen und
+nachbemalen, um **keinen Haaransatz erkennen** zu können.
+
+## Polstern
+
+Zum polstern verwende ich Schaumstoff, der **passgenau in der Maske** mit einer
+Heissklebepistole angebracht wird.
