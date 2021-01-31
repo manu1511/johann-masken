@@ -19,11 +19,11 @@ const Layout = ({ children }) => (
     </Head>
     <header>
       <div tw="relative">
-        <img src="/images/rauhnacht-bayern-03.jpg" tw="opacity-25" />
+        {/* <img src="/images/rauhnacht-bayern-03.jpg" tw="opacity-25" />
         <div
           tw="w-full h-full absolute top-0 left-0 bg-gradient-to-t"
           css={gradient}
-        />
+        /> */}
       </div>
 
       <Logo />
