@@ -6,8 +6,8 @@ URL="https://photos.app.goo.gl/Cv5DDPJbpnh51mgZ7";
 
 PHOTOS=$(curl -L "$URL" | perl -MHTML::Entities -pe 'decode_entities($_);' | grep -oP $RE)
 
-rm -rf photos
-mkdir photos
+rm -rf public/photos
+mkdir public/photos
 
 cd $_
 echo 'export default [' >> index.js
