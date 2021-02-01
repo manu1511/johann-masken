@@ -1,6 +1,7 @@
 import tw, { css } from "twin.macro";
 import Logo from "../components/Logo";
 import Head from "next/head";
+import Image from "next/image";
 
 const gradient = css`
   --tw-gradient-from: white 25%;
@@ -19,11 +20,18 @@ const Layout = ({ children }) => (
     </Head>
     <header>
       <div tw="relative">
-        {/* <img src="/images/rauhnacht-bayern-03.jpg" tw="opacity-25" />
+        <Image
+          src="/images/rauhnacht-bayern-03.jpg"
+          tw="opacity-25"
+          width="1644"
+          height="1200"
+          layout="responsive"
+          priority="true"
+        />
         <div
           tw="w-full h-full absolute top-0 left-0 bg-gradient-to-t"
           css={gradient}
-        /> */}
+        />
       </div>
 
       <Logo />
