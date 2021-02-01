@@ -15,8 +15,10 @@ echo 'export default [' >> index.js
 for photo in $PHOTOS; do
     curl -JLO "${photo}=d"
     f=$(ls -t | head -1)
+	w=$(identify -format "%w" $f)
+	h=$(identify -format "%h" $f)
 
-    echo '  "'$f'", ' >> index.js
+    echo '  { src: "'$f'", width: '$w', height: '$h' }, ' >> index.js
 done
 
 echo ']' >> index.js
