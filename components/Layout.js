@@ -22,6 +22,7 @@ const Layout = ({ children }) => (
       <div tw="relative">
         <Image
           src="/images/rauhnacht-bayern-03.jpg"
+          alt="Rauhnacht Bayern"
           tw="opacity-25"
           width="1644"
           height="1200"
