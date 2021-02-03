@@ -13,6 +13,7 @@ const gradient = css`
 const Layout = ({ children, image }) => (
   <>
     <Head>
+      <link rel="favicon" href="/favicon.ico" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
