@@ -1,4 +1,9 @@
-module.exports = {
+const withMDX = require("@next/mdx")({
+  extension: /\.(md|mdx)$/,
+});
+
+module.exports = withMDX({
+  pageExtensions: ["js", "jsx", "md", "mdx"],
   webpack: (config, { isServer }) => {
     // Fixes packages that depend on fs/module module
     if (!isServer) {
@@ -7,4 +12,4 @@ module.exports = {
 
     return config;
   },
-};
+});

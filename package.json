@@ -9,6 +9,8 @@
     "gphotos": "node gphotos"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^10.0.6",
     "hamburger-react": "^2.4.0",
     "next": "10.0.5",
     "react": "17.0.1",

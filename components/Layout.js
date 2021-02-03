@@ -10,7 +10,7 @@ const gradient = css`
     var(--tw-gradient-to, rgba(255, 255, 255, 0));
 `;
 
-const Layout = ({ children }) => (
+const Layout = ({ children, image }) => (
   <>
     <Head>
       <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -23,7 +23,7 @@ const Layout = ({ children }) => (
       <header>
         <div tw="relative">
           <Image
-            src="/images/rauhnacht-bayern-03.jpg"
+            src={image}
             alt="Rauhnacht Bayern"
             tw="opacity-25"
             width="1644"
@@ -50,5 +50,9 @@ const Layout = ({ children }) => (
     </div>
   </>
 );
+
+Layout.defaultProps = {
+  image: "/images/rauhnacht-bayern-03.jpg",
+};
 
 export default Layout;
