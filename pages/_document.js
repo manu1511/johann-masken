@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="de">
+      <Html lang="de" style={{ scrollBehavior: "smooth" }}>
         <Head />
         <body>
           <Main />
