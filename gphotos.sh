@@ -10,15 +10,17 @@ rm -rf public/photos
 mkdir public/photos
 
 cd $_
-echo 'export default [' >> index.js
+echo 'export default [' > ../../gphotos.js
 
 for photo in $PHOTOS; do
     curl -JLO "${photo}=d"
     f=$(ls -t | head -1)
-	w=$(identify -format "%w" $f)
-	h=$(identify -format "%h" $f)
+	mogrify -auto-orient "$f"
 
-    echo '  { src: "'$f'", width: '$w', height: '$h' }, ' >> index.js
+	w=$(identify -format "%w" "$f")
+	h=$(identify -format "%h" "$f")
+
+    echo '  { src: "'$f'", width: "'$w'", height: "'$h'" }, ' >> ../../gphotos.js
 done
 
-echo ']' >> index.js
+echo ']' >> ../../gphotos.js
