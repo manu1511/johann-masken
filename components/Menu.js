@@ -7,7 +7,7 @@ const Menu = () => {
   let [isOpen, setOpen] = useState(false);
 
   return (
-    <div tw="my-8 mx-8 border-t">
+    <div tw="my-8 mx-4 border-t">
       <div tw="flex justify-center -mb-14">
         <div tw="p-1 border rounded-full bg-white transform -translate-y-1/2">
           <Hamburger size="24" label="Menü" toggled={isOpen} toggle={setOpen} />
