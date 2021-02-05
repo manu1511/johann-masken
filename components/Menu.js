@@ -1,7 +1,25 @@
 import tw from "twin.macro";
 import { Divide as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import MenuItem from "./MenuItem";
+import { useRouter } from "next/router";
+import Link from "next/link";
+
+const MenuItem = ({ children, name, href, title, desc }) => {
+  const router = useRouter();
+  const currentPage = router.pathname.replaceAll("/", "") || "index";
+  const activePage = href.replaceAll("/", "") || "index";
+
+  return (
+    <li css={[activePage === currentPage && tw`font-bold`]}>
+      <Link href={href} passHref>
+        <a title={title} tw="block py-2 hocus:text-gray-500">
+          {name}
+          {desc && <div tw="text-sm text-gray-500 font-normal">{desc}</div>}
+        </a>
+      </Link>
+    </li>
+  );
+};
 
 const Menu = () => {
   let [isOpen, setOpen] = useState(false);
