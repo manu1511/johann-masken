@@ -3,6 +3,7 @@ import Image from "next/image";
 import tw, { css } from "twin.macro";
 import Logo from "./Logo";
 import Menu from "./Menu";
+import Footer from "./Footer";
 
 const gradient = css`
   --tw-gradient-from: white 25%;
@@ -47,7 +48,7 @@ const Layout = ({ children, image }) => (
 
       <main tw="p-8">{children}</main>
 
-      <footer></footer>
+      <Footer />
     </div>
   </>
 );
