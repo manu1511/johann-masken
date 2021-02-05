@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import { MDXProvider } from "@mdx-js/react";
 import tw, { css } from "twin.macro";
 import Logo from "./Logo";
 import Menu from "./Menu";
@@ -10,6 +12,34 @@ const gradient = css`
   --tw-gradient-stops: var(--tw-gradient-from),
     var(--tw-gradient-to, rgba(255, 255, 255, 0));
 `;
+
+const components = {
+  h1: (props) => (
+    <h1 tw="text-3xl text-center font-bold leading-none mb-4" {...props} />
+  ),
+  h2: (props) => <h2 tw="text-2xl font-bold leading-none mb-4" {...props} />,
+  p: (props) => <p tw="mb-4" {...props}></p>,
+  ul: (props) => (
+    <ul tw=" list-inside divide-y divide-gray-200 mb-4" {...props} />
+  ),
+  li: (props) => <li tw="py-2" {...props} />,
+  img: (props) =>
+    props.title ? (
+      <figure>
+        <img src={props.src} alt={props.alt} />
+        <figcaption tw="font-sans text-sm text-gray-400 mt-2 mb-4">
+          {props.title}
+        </figcaption>
+      </figure>
+    ) : (
+      <img tw="mb-4" {...props} />
+    ),
+  a: (props) => (
+    <Link href={props.href} passHref>
+      <a tw="border-b border-black hocus:border-none" {...props}></a>
+    </Link>
+  ),
+};
 
 const Layout = ({ children, image }) => (
   <>
@@ -46,7 +76,9 @@ const Layout = ({ children, image }) => (
         <Menu />
       </nav>
 
-      <main tw="p-8">{children}</main>
+      <main tw="p-4">
+        <MDXProvider components={components}>{children}</MDXProvider>
+      </main>
 
       <Footer />
     </div>
