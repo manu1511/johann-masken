@@ -53,7 +53,7 @@ const Layout = ({ children, image }) => (
     </Head>
     <div tw="font-serif">
       <header>
-        <div tw="relative">
+        <div tw="relative -mb-32">
           <Image
             src={image}
             alt="Rauhnacht Bayern"

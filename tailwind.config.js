@@ -8,6 +8,9 @@ module.exports = {
         sans: ["Noto Sans", ...defaultTheme.fontFamily.sans],
         serif: ["Noto Serif", ...defaultTheme.fontFamily.serif],
       },
+      screens: {
+        xs: "480px",
+      },
     },
   },
   plugins: [],
