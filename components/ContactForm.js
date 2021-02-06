@@ -1,6 +1,6 @@
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import mail from "../services/mailer";
+// import mail from "../services/mailer";
 import tw from "twin.macro";
 
 const validationSchema = Yup.object({
