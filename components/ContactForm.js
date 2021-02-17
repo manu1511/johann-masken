@@ -3,8 +3,7 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import tw from "twin.macro";
 
-const SUCCESS_MSG = `Nachricht gesendet. Ich werde mich so schnell es geht melden! 
-Pssst... schon gesehen? `;
+const SUCCESS_MSG = `Nachricht gesendet. Ich werde mich so schnell es geht melden!`;
 const ERROR_MSG = `Nachricht konnte nicht gesendet werden. Bitte erneut versuchen
 oder mich per Mail kontaktieren. Danke!`;
 
@@ -38,33 +37,37 @@ const ContactForm = () => (
     initialValues={{ name: "", mail: "", text: "" }}
     validationSchema={validationSchema}
     onSubmit={(values, actions) => {
-      console.log(values);
+      fetch("/api/mail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      })
+        .then((res) => {
+          if (!res.ok) {
+            throw res;
+          }
 
-      setTimeout(() => {
-        actions.setSubmitting(false);
-        actions.resetForm();
+          actions.resetForm();
+          actions.setStatus({ success: SUCCESS_MSG });
 
-        actions.setStatus({ success: SUCCESS_MSG });
-        // actions.setStatus({ error: ERROR_MSG });
-      }, 3000);
-
-      // fetch here ...
+          return res;
+        })
+        .catch((err) => {
+          actions.setSubmitting(false);
+          actions.setStatus({
+            error: ERROR_MSG,
+          });
+        });
     }}
   >
     {({ isSubmitting, status }) => (
       <Form>
         <div
           tw="transition-all duration-300 ease-in-out"
-          css={[isSubmitting && tw`opacity-25 cursor-wait`]}
+          css={[isSubmitting && tw`opacity-25`]}
         >
           <Label name="name" label="Name" disabled={isSubmitting} />
-          <Label
-            name="mail"
-            label="Email"
-            type="email"
-            placeholder="@"
-            required
-          />
+          <Label name="mail" label="Email" type="email" placeholder="@" />
           <Label
             name="text"
             label="Text"
@@ -89,16 +92,7 @@ const ContactForm = () => (
         </button>
 
         {!isSubmitting && !!status && status.success && (
-          <p tw="p-2">
-            {status.success}
-            <a
-              href="https://www.youtube.com/watch?v=m3E8O667bd0"
-              tw="border-b border-black hover:border-none"
-              target="_blank"
-            >
-              Mein Flaggschiff
-            </a>
-          </p>
+          <p tw="p-2">{status.success}</p>
         )}
         {!isSubmitting && !!status && status.error && (
           <p tw="p-2 text-red-500">{status.error}</p>
