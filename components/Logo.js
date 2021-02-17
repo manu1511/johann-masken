@@ -3,10 +3,18 @@ import { useEffect } from "react";
 import tw from "twin.macro";
 
 const Logo = () => {
-  useEffect(() => console.log("hi"));
+  useEffect(() => {
+    document.querySelector("#path").setAttribute("stroke-dashoffset", 480);
+
+    document.querySelector("#johann").style.opacity = 1;
+    document.querySelector("#johann").style.transform = "none";
+
+    document.querySelector("#masken").style.opacity = 1;
+    document.querySelector("#masken").style.transform = "none";
+  });
 
   return (
-    <>
+    <div class="logo">
       <Link href="/" passHref>
         <a
           tw="block relative w-24 m-auto"
@@ -30,11 +38,11 @@ const Logo = () => {
                 id="path"
                 d="M 14.749,0 C 10.65067,19.822939 -3.8311517,49.339605 35,61.408005 l 52.853553,19.62132 C 145.76873,116.38018 83.682575,179.10709 61.62132,168.92577 38.977188,178.87081 -30.355304,120.29069 57.87868,69.408005 79.156241,66.442864 100.93101,61.729633 114.06066,44.279325 119.06784,32.74225 117.93668,18.136004 109.746,0"
                 strokeDasharray="1000"
-                // strokeDashoffset="1000"
-                strokeDashoffset="480"
+                strokeDashoffset="1000"
                 strokeWidth="36"
                 stroke="#E01B1B"
                 fill="none"
+                tw="transition-all duration-1000 ease-in-out"
               ></path>
               <clipPath id="clip">
                 <path
@@ -77,7 +85,11 @@ const Logo = () => {
 
       <Link href="/" passHref>
         <a rel="home" title="JOHANN MASKEN" tw="block w-48 py-8 m-auto">
-          <svg tw="mb-4" viewBox="0 0 75.44 12.33">
+          <svg
+            tw="opacity-0 transform translate-y-full transition-all duration-500 delay-700 mb-4"
+            viewBox="0 0 75.44 12.33"
+            id="johann"
+          >
             <g transform="translate(-61.556507,-36.706392)">
               <g aria-label="JOHANN">
                 <path d="m 65.722098,48.999968 c 1.354664,0 2.472262,-0.423333 3.251194,-1.202265 0.795865,-0.795865 1.168398,-1.845729 1.168398,-3.33586 v -7.518385 h -3.268127 v 7.501452 c 0,1.100665 -0.524933,1.659463 -1.354664,1.659463 -0.728132,0 -1.269998,-0.406399 -1.84573,-1.100664 l -2.116662,1.998129 c 0.829731,1.134531 2.099729,1.99813 4.165591,1.99813 z" />
@@ -90,7 +102,11 @@ const Logo = () => {
             </g>
           </svg>
 
-          <svg viewBox="0 0 73.88 12.26">
+          <svg
+            tw="opacity-0 transform translate-y-full transition-all duration-500 delay-1000"
+            viewBox="0 0 73.88 12.26"
+            id="masken"
+          >
             <g transform="translate(-110.47078,-213.09634)">
               <g aria-label="MASKEN">
                 <path d="m 110.47078,225.15285 h 3.21733 v -6.77332 l 3.01412,4.60585 h 0.0677 l 3.03106,-4.63972 v 6.80719 h 3.26812 v -11.85331 h -3.47132 l -2.82786,4.58892 -2.82787,-4.58892 h -3.47132 z" />
@@ -104,7 +120,7 @@ const Logo = () => {
           </svg>
         </a>
       </Link>
-    </>
+    </div>
   );
 };
 
