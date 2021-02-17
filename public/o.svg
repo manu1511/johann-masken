@@ -22,8 +22,8 @@
             attributeName="stroke-dashoffset" 
             animation-timing-function="ease-in-out"
             values="1000;480;1000" 
-            begin="0s;j1.end+1s"
-            dur="2s" />
+            begin="0s;j1.end"
+            dur="2.5s" />
             <!-- repeatCount="indefinite" /> -->
          </path>
 		<clipPath id="clip">
