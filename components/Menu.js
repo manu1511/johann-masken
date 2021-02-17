@@ -34,7 +34,7 @@ const Menu = () => {
 
       {isOpen && (
         <ul tw="divide-y divide-gray-200 border-b mb-8">
-          <MenuItem name="Home" href="/" />
+          <MenuItem name="Startseite" href="/" />
           <MenuItem name="Bilder" href="/bilder/" />
           <MenuItem
             name="Maskenreparatur & Umbau"
