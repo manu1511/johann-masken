@@ -10,7 +10,7 @@ const Social = ({ href, title, children }) => (
 );
 
 const Footer = () => (
-  <div tw="my-8 mx-4 border-t">
+  <footer tw="my-8 mx-4 border-t">
     <div tw="flex justify-center -mb-8">
       <div tw="border rounded-full bg-white transform -translate-y-1/2">
         <a href="#top" title="Nach oben" tw="block p-3">
@@ -72,7 +72,7 @@ const Footer = () => (
         </a>
       </p>
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;
