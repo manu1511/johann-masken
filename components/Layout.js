@@ -15,19 +15,24 @@ const gradient = css`
 
 const components = {
   h1: (props) => (
-    <h1 tw="text-3xl text-center font-bold leading-none mb-4" {...props} />
+    <h1
+      tw="text-3xl sm:text-5xl text-center font-bold leading-none mb-4 sm:mb-12"
+      {...props}
+    />
   ),
-  h2: (props) => <h2 tw="text-2xl font-bold leading-none mb-4" {...props} />,
-  p: (props) => <p tw="mb-4" {...props}></p>,
+  h2: (props) => (
+    <h2 tw="text-2xl sm:text-3xl font-bold leading-none mb-4" {...props} />
+  ),
+  p: (props) => <p tw="sm:text-xl mb-4" {...props}></p>,
   ul: (props) => (
-    <ul tw=" list-inside divide-y divide-gray-200 mb-4" {...props} />
+    <ul tw="sm:text-xl list-inside divide-y divide-gray-200 mb-4" {...props} />
   ),
   li: (props) => <li tw="py-2" {...props} />,
   img: (props) =>
     props.title ? (
       <figure>
         <img src={props.src} alt={props.alt} />
-        <figcaption tw="font-sans text-sm text-gray-400 mt-2 mb-4">
+        <figcaption tw="font-sans text-sm sm:text-base text-gray-400 mt-2 mb-4">
           {props.title}
         </figcaption>
       </figure>
@@ -51,9 +56,9 @@ const Layout = ({ children, image }) => (
         rel="stylesheet"
       />
     </Head>
-    <div tw="font-serif">
-      <header>
-        <div tw="relative -mb-32">
+    <div tw="font-serif max-w-3xl m-auto">
+      <header tw="sm:mt-32">
+        <div tw="relative -mb-32 sm:hidden sm:m-0">
           <Image
             src={image}
             alt="Rauhnacht Bayern"

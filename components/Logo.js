@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import tw from "twin.macro";
 
-const Logo = () => {
+const Logo = ({ ...rest }) => {
   useEffect(() => {
     document.querySelector("#path").setAttribute("stroke-dashoffset", 480);
 
@@ -14,10 +14,10 @@ const Logo = () => {
   });
 
   return (
-    <div class="logo">
+    <div class="logo" {...rest}>
       <Link href="/" passHref>
         <a
-          tw="block relative w-24 m-auto"
+          tw="block relative w-24 sm:w-32 m-auto"
           href="/"
           rel="home"
           title="JOHANN MASKEN"
@@ -84,7 +84,7 @@ const Logo = () => {
       </Link>
 
       <Link href="/" passHref>
-        <a rel="home" title="JOHANN MASKEN" tw="block w-48 py-8 m-auto">
+        <a rel="home" title="JOHANN MASKEN" tw="block w-48 py-8 sm:w-64 m-auto">
           <svg
             tw="opacity-0 transform translate-y-full transition-all duration-500 delay-700 mb-4"
             viewBox="0 0 75.44 12.33"
