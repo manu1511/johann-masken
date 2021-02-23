@@ -15,8 +15,8 @@ export default async (req, res) => {
 
   return transporter
     .sendMail({
-      from: "man.koell@mailbox.org",
-      to: "man.koell@gmail.com",
+      from: "homepage@johann-masken.at",
+      to: "office@johann-masken.at",
       subject: `Kontakt: ${name} via johann-masken.at`,
       replyTo: mail,
       text: text,
