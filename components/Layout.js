@@ -28,17 +28,6 @@ const components = {
     <ul tw="sm:text-xl list-inside divide-y divide-gray-200 mb-4" {...props} />
   ),
   li: (props) => <li tw="py-2" {...props} />,
-  img: (props) =>
-    props.title ? (
-      <figure>
-        <img src={props.src} alt={props.alt} />
-        <figcaption tw="font-sans text-sm sm:text-base text-gray-400 mt-2 mb-4">
-          {props.title}
-        </figcaption>
-      </figure>
-    ) : (
-      <img tw="mb-4" {...props} />
-    ),
   a: (props) => (
     <Link href={props.href} passHref>
       <a tw="border-b border-black hocus:border-none" {...props}></a>
