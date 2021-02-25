@@ -12,4 +12,8 @@ module.exports = withMDX({
 
     return config;
   },
+  images: {
+    loader: "cloudinary",
+    path: "https://res.cloudinary.com/johannmasken/image/upload/",
+  },
 });
