@@ -14,7 +14,7 @@ const Logo = ({ ...rest }) => {
   });
 
   return (
-    <div class="logo" {...rest}>
+    <div className="logo" {...rest}>
       <Link href="/" passHref>
         <a
           tw="block relative w-24 sm:w-32 m-auto"
